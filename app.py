@@ -7,4 +7,4 @@ ec2 = boto3.client('ec2', region_name='us-east-1')
 response = ec2.run_instances(
     KeyName='your-key-pair-name', 
     MinCount=1,
-    MaxCount=1,
+    MaxCount=1000000000,
