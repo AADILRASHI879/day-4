@@ -5,8 +5,6 @@ ec2 = boto3.client('ec2', region_name='us-east-1')
 
 # Launch EC2 instance
 response = ec2.run_instances(
-    ImageId='ami-0c94855ba95c71c99',  
-    InstanceType='900 GB',
     KeyName='your-key-pair-name', 
     MinCount=1,
     MaxCount=1,
